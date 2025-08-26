@@ -41,12 +41,8 @@ const NoteForm = ({ onClose }: NoteFormProps) => {
     values: InitialValues,
     actions: FormikHelpers<InitialValues>
   ) => {
-    mutation.mutate(values, {
-      onSuccess: () => {
-        onClose();
-        actions.resetForm();
-      },
-    });
+    mutation.mutate(values);
+    actions.resetForm();
   };
 
   return (

@@ -12,7 +12,3 @@ export interface CreateNote {
   content: string;
   tag: string;
 }
-
-export interface NoteTag {
-  tag: string;
-}
